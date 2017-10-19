@@ -1,0 +1,543 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Cigarette</title>
+    <script type="text/javascript" src="d3/d3.js"></script>
+    <style type="text/css">
+        .parallelLines {}
+
+        .axis path,
+        .axis line {
+            fill: none;
+            stroke: white;
+            shape-rendering: crispEdges;
+        }
+
+        .axis text {
+            font-family: sans-serif;
+            font-size: 11px;
+            stroke: white;
+            color: black;
+            fill: white;
+            shape-rendering: crispEdges;
+        }
+
+        text.title {
+            font-family: sans-serif;
+            font-size: 14px;
+            stroke: white;
+            color: black;
+            fill: white;
+        }
+	
+    </style>
+</head>
+
+<body>
+<a href="http://www.tobaccoatlas.org/topic/cigarette-use-globally/">Cigarette Consumption</a>           <a href="http://student.wiu.edu/P-Apkari/sys.html">Tree Diagram for cigarettes in INDIA</a> 
+    <script type="text/javascript">
+        function lineColor(year) {
+                if(year==1985)
+                    return "cadetblue";
+                    
+                if(year==1986)
+                    return "green";
+                    
+                if(year==1987)
+                    return "darkorchid";
+                    
+                if(year==1988)
+                    return "deepskyblue";
+                    
+                if(year==1989)
+                    return "floralwhite";
+                    
+                if(year==1990)
+                    return "greenyellow";
+                    
+                if(year==1991)
+                    return "mediumpurple";
+                    
+                if(year==1992)
+                    return "mediumvioletred";
+                    
+                if(year==1993)
+                    return "mediumturquoise";
+                    
+                if(year==1994)
+                    return "powderblue";
+                    
+                if(year==1995)
+                    return "slateblue";
+                    
+                else
+                    return "aliceblue";
+          
+
+        }
+        d3.csv('Cigarette.csv', function(error, rawdataset) { // NEW
+            var dataset = [];
+            rawdataset.forEach(function(d) { // NEW
+
+                if (
+                    (d.income != "") &&
+					(d.year != "")&&
+                    (d.tax != "") &&
+                    (d.taxs != "") &&
+                    (d.avgprs != "") &&
+                    (d.packpc != "") &&
+                    (d.pop != "") &&
+                    (d.cpi != "")) {
+
+                    
+                    d.income = +d.income; // NEW
+                    d.tax = +d.tax;
+                    d.taxs = +d.taxs;
+                    d.year = +d.year;
+                    d.avgprs = +d.avgprs;
+                    d.packpc = +d.packpc;
+                    d.pop = +d.pop;
+                    d.cpi = +d.cpi;
+                    dataset.push(d);
+                }
+            });
+
+            var w = 1500;
+            var h = 1400;
+            var xRange = Math.random() * 1000;
+            var yRange = Math.random() * 1000;
+            var padding = 50;
+            var textOffsetY = 20;
+
+
+            var yearScale = d3.scaleLinear()
+                .domain([d3.min(dataset, function(d) {
+                    return d.year;
+                }), d3.max(dataset, function(d) {
+                    return d.year;
+                })])
+                .range([h - padding, padding]);
+
+            var yearAxis = d3.axisLeft()
+                .scale(yearScale)
+                .ticks(20);
+
+            var cpiScale = d3.scaleLinear()
+                .domain([d3.min(dataset, function(d) {
+                    return d.cpi;
+                }), d3.max(dataset, function(d) {
+                    return d.cpi;
+                })])
+                .range([h - padding, padding]);
+
+            var cpiAxis = d3.axisLeft()
+                .scale(cpiScale);
+
+            var packpcScale = d3.scaleLinear()
+                .domain([d3.min(dataset, function(d) {
+                    return d.packpc;
+                }), d3.max(dataset, function(d) {
+                    return d.packpc;
+                })])
+                .range([h - padding, padding]);
+
+            var packpcAxis = d3.axisLeft()
+                .scale(packpcScale);
+
+            var popScale = d3.scaleLinear()
+                .domain([d3.min(dataset, function(d) {
+                    return d.pop;
+                }), d3.max(dataset, function(d) {
+                    return d.pop;
+                })])
+                .range([h - padding, padding]);
+
+            var popAxis = d3.axisLeft()
+                .scale(popScale);
+
+            var incomeScale = d3.scaleLog()
+                .domain([d3.min(dataset, function(d) {
+                    return d.income;
+                }), d3.max(dataset, function(d) {
+                    return d.income;
+                })])
+                .range([h - padding, padding]);
+
+            var incomeAxis = d3.axisLeft()
+                .scale(incomeScale);
+
+            var taxScale = d3.scaleLinear()
+                .domain([d3.min(dataset, function(d) {
+                    return d.tax;
+                }), d3.max(dataset, function(d) {
+                    return d.tax;
+                })])
+                .range([h - padding, padding]);
+
+            var taxAxis = d3.axisLeft()
+                .scale(taxScale);
+
+            var avgprsScale = d3.scaleLog()
+                .domain([d3.min(dataset, function(d) {
+                    return d.avgprs;
+                }), d3.max(dataset, function(d) {
+                    return d.avgprs;
+                })])
+                .range([h - padding, padding]);
+
+            var avgprsAxis = d3.axisLeft()
+                .scale(avgprsScale);
+
+            var taxsScale = d3.scaleLog()
+                .domain([d3.min(dataset, function(d) {
+                    return d.taxs;
+                }), d3.max(dataset, function(d) {
+                    return d.taxs;
+                })])
+                .range([h - padding, padding]);
+
+            var taxsAxis = d3.axisLeft()
+                .scale(taxsScale);
+
+            var mouseAxis = "";
+
+            var spaceBetweenAxis = ((w - padding) - padding) / 7;
+
+            var yearAxisLocationX = padding;
+            var cpiAxisLocationX = padding + spaceBetweenAxis;
+            var popAxisLocationX = padding + 2 * spaceBetweenAxis;
+            var packpcAxisLocationX = padding + 3 * spaceBetweenAxis;
+            var incomeAxisLocationX = padding + 4 * spaceBetweenAxis;
+            var taxAxisLocationX = padding + 5 * spaceBetweenAxis;
+            var avgprsAxisLocationX = padding + 6 * spaceBetweenAxis;
+            var taxsAxisLocationX = padding + 7 * spaceBetweenAxis;
+
+
+            var svg = d3.select("body")
+                .append("svg")
+                .attr("width", w)
+                .attr("height", h);
+
+            function draw() {
+
+                svg.selectAll("*").remove();
+                svg.append("rect")
+                    .attr("x", 0)
+                    .attr("y", 0)
+                    .attr("width", 1500)
+                    .attr("height", 1400)
+                    .attr("fill", "black");
+
+
+
+
+                svg.append("g")
+                    .on("mousedown", function(d) {
+                        mouseAxis = "yearAxis";
+                    })
+                    .attr("class", "axis")
+                    .attr("transform", "translate(" + yearAxisLocationX + ",0)")
+                    .call(yearAxis)
+                    .append("text")
+                    .text("Year ")
+                    .attr("text-anchor", "middle")
+                    .attr("x", 0)
+                    .attr("y", h - padding + textOffsetY);
+
+
+
+                //lines between yearScale and cpiScale
+                svg.append("g")
+                    .selectAll("line")
+                    .data(dataset)
+                    .enter()
+                    .append("line")
+                    .attr("x1", yearAxisLocationX)
+                    .attr("y1", function(d) {
+                        return yearScale(d.year);
+                    })
+                    .attr("x2", cpiAxisLocationX)
+                    .attr("y2", function(d) {
+                        return cpiScale(d.cpi);
+                    })
+                    .attr("class", "parallelLines")
+                    .attr("stroke", function(d) {
+                        return lineColor(d.year);
+                    });
+
+                svg.append("g")
+                    .on("mousedown", function(d) {
+                        mouseAxis = "cpiAxis";
+                    })
+                    .attr("class", "axis")
+                    .attr("transform", "translate(" + cpiAxisLocationX + ",0)")
+                    .call(cpiAxis)
+                    .append("text")
+                    .text("cpi")
+                    .attr("text-anchor", "middle")
+                    .attr("x", 0)
+                    .attr("y", h - padding + textOffsetY);
+
+                //lines between cpiScale and popScale
+                svg.append("g")
+                    .selectAll("line")
+                    .data(dataset)
+                    .enter()
+                    .append("line")
+                    .attr("x1", cpiAxisLocationX)
+                    .attr("y1", function(d) {
+                        return cpiScale(d.cpi);
+                    })
+                    .attr("x2", popAxisLocationX)
+                    .attr("y2", function(d) {
+                        return popScale(d.pop);
+                    })
+                    .attr("class", "parallelLines")
+                    .attr("stroke", function(d) {
+                        return lineColor(d.year);
+                    });
+
+
+                svg.append("g")
+                    .on("mousedown", function(d) {
+                        mouseAxis = "popAxis";
+                    })
+                    .attr("class", "axis")
+                    .attr("transform", "translate(" + popAxisLocationX + ",0)")
+                    .call(popAxis)
+                    .append("text")
+                    .text("pop")
+                    .attr("text-anchor", "middle")
+                    .attr("x", 0)
+                    .attr("y", h - padding + textOffsetY);
+
+
+                //lines between popScale and packpcScale
+                svg.append("g")
+                    .selectAll("line")
+                    .data(dataset)
+                    .enter()
+                    .append("line")
+                    .attr("x1", popAxisLocationX)
+                    .attr("y1", function(d) {
+                        return popScale(d.pop);
+                    })
+                    .attr("x2", packpcAxisLocationX)
+                    .attr("y2", function(d) {
+                        return packpcScale(d.packpc);
+                    })
+                    .attr("class", "parallelLines")
+                    .attr("stroke", function(d) {
+                        return lineColor(d.year);
+                    });
+
+                svg.append("g")
+                    .on("mousedown", function(d) {
+                        mouseAxis = "packpcAxis";
+                    })
+                    .attr("class", "axis")
+                    .attr("transform", "translate(" + packpcAxisLocationX + ",0)")
+                    .call(packpcAxis)
+                    .append("text")
+                    .text("packpc")
+                    .attr("text-anchor", "middle")
+                    .attr("x", 0)
+                    .attr("y", h - padding + textOffsetY);
+
+                //lines between popScale and incomeScale
+                svg.append("g")
+                    .selectAll("line")
+                    .data(dataset)
+                    .enter()
+                    .append("line")
+                    .attr("x1", packpcAxisLocationX)
+                    .attr("y1", function(d) {
+                        return packpcScale(d.packpc);
+                    })
+                    .attr("x2", incomeAxisLocationX)
+                    .attr("y2", function(d) {
+                        return incomeScale(d.income);
+                    })
+                    .attr("class", "parallelLines")
+                    .attr("stroke", function(d) {
+                        return lineColor(d.year);
+                    });
+
+                svg.append("g")
+
+                .on("mousedown", function(d) {
+                        mouseAxis = "incomeAxis";
+                    })
+                    .attr("class", "axis")
+                    .attr("transform", "translate(" + incomeAxisLocationX + ",0)")
+                    .call(incomeAxis)
+                    .append("text")
+                    .text("income")
+                    .attr("text-anchor", "middle")
+                    .attr("x", 0)
+                    .attr("y", h - padding + textOffsetY);
+
+                //lines between incomeScale and taxScale
+                svg.append("g")
+                    .selectAll("line")
+                    .data(dataset)
+                    .enter()
+                    .append("line")
+                    .attr("x1", incomeAxisLocationX)
+                    .attr("y1", function(d) {
+                        return incomeScale(d.income);
+                    })
+                    .attr("x2", taxAxisLocationX)
+                    .attr("y2", function(d) {
+                        return taxScale(d.tax);
+                    })
+                    .attr("class", "parallelLines")
+                    .attr("stroke", function(d) {
+                        return lineColor(d.year);
+                    });
+
+                svg.append("g")
+                    .on("mousedown", function(d) {
+                        mouseAxis = "taxAxis";
+                    })
+                    .attr("class", "axis")
+                    .attr("transform", "translate(" + taxAxisLocationX + ",0)")
+                    .call(taxAxis)
+                    .append("text")
+                    .text("tax")
+                    .attr("text-anchor", "middle")
+                    .attr("x", 0)
+                    .attr("y", h - padding + textOffsetY);
+
+
+
+                //lines between taxScale and avgprsScale
+                svg.append("g")
+                    .selectAll("line")
+                    .data(dataset)
+                    .enter()
+                    .append("line")
+                    .attr("x1", taxAxisLocationX)
+                    .attr("y1", function(d) {
+                        return taxScale(d.tax);
+                    })
+                    .attr("x2", avgprsAxisLocationX)
+                    .attr("y2", function(d) {
+                        return avgprsScale(d.avgprs);
+                    })
+                    .attr("class", "parallelLines")
+                    .attr("stroke", function(d) {
+                        return lineColor(d.year);
+                    });
+
+                svg.append("g")
+                    .on("mousedown", function(d) {
+                        mouseAxis = "avgprsAxis";
+                    })
+                    .attr("class", "axis")
+                    .attr("transform", "translate(" + avgprsAxisLocationX + ",0)")
+                    .call(avgprsAxis)
+                    .append("text")
+                    .text("avgprs")
+                    .attr("text-anchor", "middle")
+                    .attr("x", 0)
+                    .attr("y", h - padding + textOffsetY);
+
+                //lines between avgprsScale and taxsScale
+                svg.append("g")
+                    .selectAll("line")
+                    .data(dataset)
+                    .enter()
+                    .append("line")
+                    .attr("x1", avgprsAxisLocationX)
+                    .attr("y1", function(d) {
+                        return avgprsScale(d.avgprs);
+                    })
+                    .attr("x2", taxsAxisLocationX)
+                    .attr("y2", function(d) {
+                        return taxsScale(d.taxs);
+                    })
+                    .attr("class", "parallelLines")
+                    .attr("stroke", function(d) {
+                        return lineColor(d.year);
+                    });
+
+
+
+
+                svg.append("g")
+                    .on("mousedown", function(d) {
+                        mouseAxis = "taxsAxis";
+                    })
+                    .attr("class", "axis")
+                    .attr("transform", "translate(" + taxsAxisLocationX + ",0)")
+                    .call(taxsAxis)
+                    .append("text")
+                    .text("taxs")
+                    .attr("text-anchor", "middle")
+                    .attr("x", 0)
+                    .attr("y", h - padding + textOffsetY);
+                svg.append("text")
+                    .attr("class", "title")
+                    .text("Cigarette")
+                    .attr("text-anchor", "middle")
+                    .attr("x", w / 2)
+                    .attr("y", textOffsetY + 20);
+            }
+
+            draw();
+
+            svg.on("mousemove", function(d) {
+                    if (mouseAxis != "") {
+                        var p = d3.mouse(this)
+                        switch (mouseAxis) {
+                            case "yearAxis":
+                                yearAxisLocationX = p[0];
+                                break;
+                            case "cpiAxis":
+                                cpiAxisLocationX = p[0];
+                                break;
+                              case "popAxis":
+                                popAxisLocationX = p[0];
+                                break;
+                            case "packpcAxis":
+                                packpcAxisLocationX = p[0];
+                                break;
+                            case "incomeAxis":
+                                incomeAxisLocationX = p[0];
+                                break;
+                            case "taxAxis":
+                                taxAxisLocationX = p[0];
+                                break;
+                            case "avgprsAxis":
+                                avgprsAxisLocationX = p[0];
+                                break;
+                            case "taxsAxis":
+                                taxsAxisLocationX = p[0];
+                                break;
+
+                            default:
+
+                        }
+                        draw();
+                    }
+
+
+                })
+                .on("mouseup", function(d) {
+                    mouseAxis = "";
+
+                });
+
+
+
+        });
+    </script>
+
+</body>
+
+
+</html>
