@@ -1,0 +1,247 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>getsetgo</title>
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+<script src="plugins_Ie/respond.min.js"></script>
+<script src="plugins_Ie/html5shiv.js"></script>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/mystyle.css" type="text/css" />
+<link rel="stylesheet" href="css/bootstrap-formhelpers.css" type="text/css" />
+<link rel="stylesheet" href="css/bootstrap-formhelpers.min.css" type="text/css" />
+
+</head>
+<body>
+	<div class="container">
+    	<div class="row">
+        	<div class="col-lg-10 col-md-10 col-lg-offset-1 col-md-offset-1">
+<!-- Main Content ===================================================== -->
+				<div class="row">
+                	<div class="navbar navbar-default">
+                        <div class="col-lg-10 col-md-10 col-lg-offset-1 col-md-offset-1">
+                        	<div class="navbar-header">
+                  				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    				<span class="icon-bar"></span>
+                    				<span class="icon-bar"></span>
+                    				<span class="icon-bar"></span>
+                  				</button>
+                  				<a class="" href="#"><img src="images/logo.png" class="logo img-responsive" /></a>
+                </div>
+                        	<div class="navbar-collapse collapse navbar-responsive-collapse">
+                            	<ul class="nav navbar-nav navbar-right">
+                                    <li><a href="bustickets.html">BusTickets</a></li>
+                                    <li><a href="#">FlightTickets</a></li>
+                                    <li><a href="#">Billpayments</a></li>
+                                    <li class="active"><a href="recharges.html">Recharges</a></li>
+                                </ul>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+<!-- End Header ======================================================= -->
+				<div class="row header">
+                	<div class="col-lg-10 col-md-10 col-lg-offset-1 col-md-offset-1">
+                    	<div class="row">
+                        	<div class="col-lg-6 col-md-6 col-sm-6">
+                            	<h4>Recharges</h4>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                            	<p class="text-right">Login</p>
+                            </div>
+                        </div>
+                        <div class="row recharges-page">
+                            <ol class="breadcrumb">
+                               	<li class="active"><a href="#">Mobile</a></li>
+                                <li><a href="recharges_mobile.html">DTH</a></li>
+                                <li><a href="#">Datacard</a></li>
+                                <li><a href="#">Tollcard</a></li>
+                        	</ol>    
+                        </div>
+                    </div>
+                </div>
+<!-- End subHeader ======================================================= -->
+				<div class="row content">
+                	<div class="col-lg-10 col-md-10 col-lg-offset-1 col-md-offset-1">
+                    	<div class="row">
+                        	<div class="col-lg-5 col-md-5 col-sm-5 col-xs-6 col-msm-12">
+                            	<form role="form" style="display:block"><!-- Mobile Recharge Form -->
+                                	<div class="form-group">
+                                    	<label for="mobilenumber">Enter Prepaid mobile Number</label>
+                                        <div class="mobileno-input">
+                                        	<span class="nineOne">+91</span>
+                                        	<input class="form-control" type="text" name="entersourcecity" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                    	<label for="mobileoperator">Select Operator</label>
+                                       <select class="select-dropdown form-control">
+                                            <option>------- Select Operator -------</option>
+                                            <option>Airtel</option>
+                                            <option>Idea</option>
+                                            <option>BSNL</option>
+                                            <option>Vodafone</option>
+                                    	</select>
+                                    </div>
+                                    <div class="form-group">
+                                    	<label for="rechargeamount">Enter Recharge Amount</label>
+                                        <div class="price-input">
+                                        	<span class="rupee rupee-font">Rs</span>
+                                        	<input class="form-control" type="text" name="entersourcecity" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group search-btn">
+                                        <a class="btn btn-primary" href="recharge_pick_coupon.html" name="searchbuses">Proceed</a>
+                                    </div>
+                                </form>
+                                <form role="form" style="display:none"><!-- DTH Recharge Form -->
+                                	<div class="form-group">
+                                    	<label for="mobileoperator">Select your DTH provider</label>
+                                       <select class="select-dropdown form-control">
+                                            <option>------- Select Operator -------</option>
+                                            <option>Airtel</option>
+                                            <option>Idea</option>
+                                            <option>BSNL</option>
+                                            <option>Vodafone</option>
+                                    	</select>
+                                    </div>
+                                	<div class="form-group">
+                                    	<label for="mobilenumber">Enter your Customer ID</label>
+                                        	<input class="form-control" type="text" placeholder="Customer ID" name="entersourcecity" />
+                                    </div>
+                                    <div class="form-group">
+                                    	<label for="rechargeamount">Enter Recharge Amount</label>
+                                        <div class="price-input">
+                                        	<span class="rupee rupee-font">Rs</span>
+                                        	<input class="form-control" type="text" name="entersourcecity" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group search-btn">
+                                        <a class="btn btn-primary" href="recharge_pick_coupon.html" name="searchbuses">Proceed</a>
+                                    </div>
+                                </form>
+                                <form role="form" style="display:none"><!-- Datacard Recharge Form -->
+                                	<div class="form-group">
+                                    	<label for="mobilenumber">Enter Prepaid Datacard Number</label>
+                                        <div class="mobileno-input">
+                                        	<span class="nineOne">+91</span>
+                                        	<input class="form-control" type="text" placeholder="Datacard Number" name="entersourcecity" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                    	<label for="mobileoperator">Select Operator</label>
+                                       <select class="select-dropdown form-control">
+                                            <option>------- Select Operator -------</option>
+                                            <option>Airtel</option>
+                                            <option>Idea</option>
+                                            <option>BSNL</option>
+                                            <option>Vodafone</option>
+                                    	</select>
+                                    </div>
+                                    <div class="form-group">
+                                    	<label for="rechargeamount">Enter Recharge Amount</label>
+                                        <div class="price-input">
+                                        	<span class="rupee rupee-font">Rs</span>
+                                        	<input class="form-control" type="text" name="entersourcecity" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group search-btn">
+                                        <a class="btn btn-primary" href="recharge_pick_coupon.html" name="searchbuses">Proceed</a>
+                                    </div>
+                                </form>
+                                <form role="form" style="display:none"><!-- DTH Recharge Form -->
+                                	<div class="form-group">
+                                    	<label for="mobileoperator">Select your Route</label>
+                                       <select class="select-dropdown form-control">
+                                            <option>------- Select your Route -------</option>
+                                            <option>Vijayawada-Eluru</option>
+                                    	</select>
+                                    </div>
+                                	<div class="form-group">
+                                    	<label for="mobilenumber">Enter Toll Card Number</label>
+                                        	<input class="form-control" type="text" placeholder="Toll Card Number" name="entersourcecity" />
+                                    </div>
+                                    <div class="form-group">
+                                    	<label for="rechargeamount">Enter Recharge Amount</label>
+                                        <div class="price-input">
+                                        	<span class="rupee rupee-font">Rs</span>
+                                        	<input class="form-control" type="text" name="entersourcecity" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group search-btn">
+                                        <a class="btn btn-primary" href="recharge_pick_coupon.html" name="searchbuses">Proceed</a>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 hidden-xxs">
+                            	<img src="images/add_1.png" class="img-responsive slide-img1" name="add1" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!-- content sec End======================================================= -->
+				<div class="row footer">
+                	<div class="col-lg-10 col-md-10 col-lg-offset-1 col-md-offset-1">
+                    	<div class="row">
+                        	<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 col-msm-12">
+                            	<h4>Get Offer By Email</h4>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 subscribe-txtbox">
+                                	<input type="text" class="form-control" />
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 footer-btn">
+                                	<div class="btn-group">
+                                		<button type="button" class="btn btn-success dropdown-toggle btn-sm" data-toggle="dropdown" name="subscribedropdown">
+    subscribe 							<span class="caret"></span>
+  										</button>
+                                      <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Every day</a></li>
+                                        <li><a href="#">Twice a week</a></li>
+                                        <li><a href="#">Once a week</a></li>
+                                      </ul>
+                                	</div>
+                                 	<button class="btn btn-primary btn-sm btn-sub" name="subscribebtn">subscribe</button>
+                                 </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 col-xxs-12 col-msm-12">
+                            	<img src="images/antivirus.png" class="img-responsive footer-img" name="paymentsecure" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row copyright">
+                	<div class="col-lg-10 col-md-10 col-lg-offset-1 col-md-offset-1">
+                    	<div class="row">
+                        	<div class="col-lg-9 col-md-9 col-sm-9">
+                            	<p><a href="#">Tweet</a> | <a href="#">Follow on Twitter</a> | <a href="#">Like on Facebook</a> | <a href="#">RSS</a> | <a href="#">About</a> | <a href="#">Sponsor</a> | <a href="#"> Suggest a link</a> | <a href="#">Sign in</a></p>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3">
+                            	<p>Copy right Resverd 2013@ssit</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!-- Main Content ===================================================== -->
+            </div>
+        </div>
+    </div>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/affix.js"></script>
+<script type="text/javascript" src="js/alert.js"></script>
+<script type="text/javascript" src="js/button.js"></script>
+<script type="text/javascript" src="js/carousel.js"></script>
+<script type="text/javascript" src="js/collapse.js"></script>
+<script type="text/javascript" src="js/dropdown.js"></script>
+<script type="text/javascript" src="js/modal.js"></script>
+<script type="text/javascript" src="js/popover.js"></script>
+<script type="text/javascript" src="js/scrollspy.js"></script>
+<script type="text/javascript" src="js/tab.js"></script>
+<script type="text/javascript" src="js/tooltip.js"></script>
+<script type="text/javascript" src="js/transition.js"></script>
+<script type="text/javascript" src="js/bootstrap-formhelpers.js"></script>
+<script type="text/javascript" src="js/bootstrap-formhelpers.min.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/qunit.js"></script>
+</body>
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>getsetgo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/mystyle.css" type="text/css" />
+<link rel="stylesheet" href="css/bootstrap-formhelpers.css" type="text/css" />
+<link rel="stylesheet" href="css/bootstrap-formhelpers.min.css" type="text/css" />
+<link rel="stylesheet" href="css/bootstrap-select.css" type="text/css" />
+<link rel="stylesheet" href="css/bootstrap-select.min.css" type="text/css" />
+</head>
+<body>
+	<div class="container coupon-page">
+    	<div class="row">
+        	<div class="col-lg-10 col-md-10 col-lg-offset-1 col-md-offset-1">
+<!-- ==================================== Main Content ================================ -->
+				<div class="row">
+                	<div class="navbar navbar-default">
+                        <div class="col-lg-10 col-md-10 col-lg-offset-1 col-md-offset-1">
+                        	<div class="navbar-header">
+                  				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    				<span class="icon-bar"></span>
+                    				<span class="icon-bar"></span>
+                    				<span class="icon-bar"></span>
+                  				</button>
+                  				<a class="" href="#"><img src="images/logo.png" class="logo img-responsive"></a>
+                </div>
+                        	<div class="navbar-collapse collapse navbar-responsive-collapse">
+                            	<ul class="nav navbar-nav navbar-right">
+                                    <li class="active"><a href="bustickets.html">BusTickets</a></li>
+                                    <li><a href="#">FlightTickets</a></li>
+                                    <li><a href="#">Billpayments</a></li>
+                                    <li><a href="recharges.html">Recharges</a></li>
+                                </ul>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+<!-- ====================================== End Header ==================================== -->
+				<div class="row header">
+                	<div class="col-lg-10 col-md-10 col-lg-offset-1 col-md-offset-1">
+                    	<div class="row">
+                        	<div class="col-lg-6 col-md-6 col-sm-6">
+                            	<h4 class="search-head"><span>Vijayawada</span><span class="glyphicon glyphicon-arrow-right"></span><span>Hyderabad</span></h4>
+                            </div>
+<!-- ============================ Filter Options Section Starts here ==================================== -->
+                            <div class="col-lg-6 col-md-6 col-sm-6 filter-bar">
+                            	<div class="hidden-xs">
+                            	<span>Edit Options: </span>
+                                 <div class="btn-group fiter-modifysearch">
+                                 	<a href="#" data-toggle="popover" data-placement="bottom" data-content="this is my popover demo" data-original-title="" title="">
+                                    	<span class="glyphicon glyphicon-edit"></span>
+                                    </a>
+                                 </div>
+                                 </div> <!-- End desktop-->     
+                                 <div class="visible-xs">
+                            	<span>Edit Options: </span>
+                                 <div class="btn-group fiter-modifysearch">
+                                 	<a href="#" data-toggle="popover" data-placement="bottom" data-content="this is my popover demo" data-original-title="Modify Search" title="">
+                                    	<span class="glyphicon glyphicon-chevron-down"></span>
+                                    </a>
+                                 </div>
+                                 </div> <!-- End Mobile-->      
+                            </div>
+<!-- ======================= Filter Options Section Ends here ======================================== -->
+                        </div>
+<!-- ============================ Brea Navigation Starts =========================================== -->
+						<div class="row hidden-xxs">
+                            <ol class="breadcrumb">
+                               	<li class="active"><a href="home.html">BusTickets</a></li>
+                                <li class="active"><a href="buses_list.html">Select Bus</a></li>
+                                <li class="active"><a href="seatlayout.html">Seat latout</a></li>
+                                <li>Passenger Details</li>
+                        	</ol>    
+                        </div>
+<!-- ============================ Brea Navigation Ends ========================================= -->
+                    </div>
+                </div>
+<!-- ===================================== End subHeader ===================================== -->
+				<div class="row content">
+        <div class="col-lg-10 col-md-10 col-lg-offset-1 col-md-offset-1 hidden-xxs"> 
+          <!-- Success Alert -->
+          <div class="alert alert-success fade in">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+            <span>1 paid Coupon Picked</span> </div>
+          <!-- Success Alert End --> 
+        </div>
+        <div class="col-lg-10 col-md-10 col-lg-offset-1 col-md-offset-1 hidden-xxs hidden-mxs catogries-section"> 
+          <span>FILTER BY</span>
+          <div class="btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" name="subscribedropdown"> Coupon Categories <span class="caret"></span> </button>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#"><i></i><span>All</span></a></li>
+              <li><a href="#"><i></i><span>Food</span></a></li>
+              <li><a href="#"><i></i><span>Entertainment</span></a></li>
+              <li><a href="#"><i></i><span>Store</span></a></li>
+              <li><a href="#"><i></i><span>Care</span></a></li>
+            </ul>
+          </div>
+          <span class="pull-right"> <a href="login.html" class="btn btn-primary">Continue</a> </span> </div>
+        <!-- Mobile Design Catogries dropdown -->
+        <div class="col-xs-12 visible-mxs visible-xxs"> 
+        	<div class="well-sm">
+            <span class="pull-left cart shoping-cart">
+            	<i class="glyphicon glyphicon-shopping-cart"> </i><strong>CART(2)</strong>
+            </span>
+          <form>
+            <select class="catogries-dropdown">
+              <option>----- Catogries ----</option>
+              <option>Most Popular</option>
+              <option>Gifts & Flowers</option>
+              <option>Travel</option>
+              <option>Food & More</option>
+            </select>
+          </form>
+          </div>
+			<div class="well-sm text-center"><a href="login.html" class="btn btn-primary continue-btn-mob">Continue</a></div>
+          <!-- Mobile Design Catogries dropdown --> 
+        </div>
+        <div class="col-lg-10 col-md-10 col-lg-offset-1 col-md-offset-1">
+          <div class="row coupons"> 
+            <!-- Start coupon -->
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 col-msm-6">
+              <div class="thumbnail"> <img src="images/ccd_thumb_small.png" class="img-responsive img-thumbnail" /> 
+                <!--<p><small>Get Second Beverage Free !</small></p>-->
+                <p class="margin-top"><span class="rupee-font">Rs</span><b>100</b><small class="pull-right"><a href="#">Knowmore</a></small></p>
+                <div class="custom-caption">
+                  <button class="btn-pick btn-lg">Pick</button>
+                </div>
+              </div>
+            </div>
+            <!-- End Coupon --> 
+            
+            <!-- Start coupon -->
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 col-msm-6">
+              <div class="thumbnail"> <img src="images/barista_thumb_small.png" class="img-responsive img-thumbnail" /> 
+                <!--<p><small>Get Second Beverage Free !</small></p>-->
+                <p class="margin-top"><span class="rupee-font">Rs</span><b>150</b><small class="pull-right"><a href="#">Knowmore</a></small></p>
+                <div class="custom-caption">
+                  <button class="btn-pick btn-lg">Pick</button>
+                </div>
+              </div>
+            </div>
+            <!-- End Coupon --> 
+            
+            <!-- Start coupon -->
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 col-msm-6">
+              <div class="thumbnail"> <img src="images/big-cinema.png" class="img-responsive img-thumbnail" /> 
+                <!--<p><small>Get Second Beverage Free !</small></p>-->
+                <p class="margin-top"><span class="rupee-font">Rs</span><b>50</b><small class="pull-right"><a href="#">Knowmore</a></small></p>
+                <div class="custom-caption">
+                  <button class="btn-pick btn-lg">Pick</button>
+                </div>
+              </div>
+            </div>
+            <!-- End Coupon --> 
+            
+            <!-- Start coupon -->
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 col-msm-6">
+              <div class="thumbnail"> <img src="images/dominos4_thumb_small.png" class="img-responsive img-thumbnail" /> 
+                <!--<p><small>Get Second Beverage Free !</small></p>-->
+                <p class="margin-top"><span class="rupee-font">Rs</span><b>80</b><small class="pull-right"><a href="#">Knowmore</a></small></p>
+                <div class="custom-caption">
+                  <button class="btn-pick btn-lg">Pick</button>
+                </div>
+              </div>
+            </div>
+            <!-- End Coupon --> 
+            
+            <!-- Start coupon -->
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 col-msm-6">
+              <div class="thumbnail"> <img src="images/costaCaffee_thumb_small.png" class="img-responsive img-thumbnail" /> 
+                <!--<p><small>Get Second Beverage Free !</small></p>-->
+                <p class="margin-top"><span class="rupee-font">Rs</span><b>10</b><small class="pull-right"><a href="#">Knowmore</a></small></p>
+                <div class="custom-caption">
+                  <button class="btn-pick btn-lg">Pick</button>
+                </div>
+              </div>
+            </div>
+            <!-- End Coupon --> 
+            <!-- Start coupon -->
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 col-msm-6">
+              <div class="thumbnail"> <img src="images/mcd_NE5_thumb_small.png" class="img-responsive img-thumbnail" /> 
+                <!--<p><small>Get Second Beverage Free !</small></p>-->
+                <p class="margin-top"><span class="rupee-font">Rs</span><b>100</b><small class="pull-right"><a href="#">Knowmore</a></small></p>
+                <div class="custom-caption">
+                  <button class="btn-pick btn-lg">Pick</button>
+                </div>
+              </div>
+            </div>
+            <!-- End Coupon --> 
+            
+            <!-- Start coupon -->
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 col-msm-6">
+              <div class="thumbnail"> <img src="images/vits_thumb_small.png" class="img-responsive img-thumbnail" /> 
+                <!--<p><small>Get Second Beverage Free !</small></p>-->
+                <p class="margin-top"><span class="rupee-font">Rs</span><b>200</b><small class="pull-right"><a href="#">Knowmore</a></small></p>
+                <div class="custom-caption">
+                  <button class="btn-pick btn-lg">Pick</button>
+                </div>
+              </div>
+            </div>
+            <!-- End Coupon --> 
+            
+            <!-- Start coupon -->
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 col-msm-6">
+              <div class="thumbnail"> <img src="images/TorrpItUp_thumb_small.png" class="img-responsive img-thumbnail" /> 
+                <!--<p><small>Get Second Beverage Free !</small></p>-->
+                <p class="margin-top"><span class="rupee-font">Rs</span><b>150</b><small class="pull-right"><a href="#">Knowmore</a></small></p>
+                <div class="custom-caption">
+                  <button class="btn-pick btn-lg">Pick</button>
+                </div>
+              </div>
+            </div>
+            <!-- End Coupon --> 
+            <!-- Start coupon -->
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 col-msm-6">
+              <div class="thumbnail"> <img src="images/Home-shop-18-.png" class="img-responsive img-thumbnail" /> 
+                <!--<p><small>Get Second Beverage Free !</small></p>-->
+                <p class="margin-top"><span class="rupee-font">Rs</span><b>50</b><small class="pull-right"><a href="#">Knowmore</a></small></p>
+                <div class="custom-caption">
+                  <button class="btn-pick btn-lg">Pick</button>
+                </div>
+              </div>
+            </div>
+            <!-- End Coupon --> 
+          </div>
+          <div class="row">
+            <div class="col-lg-12 col-md-12">
+              <ul class="pager">
+                <li class="previous disabled"><a href="#">&larr; Older</a></li>
+                <li class="next"><a href="#">Newer &rarr;</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+<!-- ================================ content sec End ======================================= -->
+				<div class="row footer">
+                	<div class="col-lg-10 col-md-10 col-lg-offset-1 col-md-offset-1">
+                    	<div class="row">
+                        	<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 col-msm-12">
+                            	<h4>Get Offer By Email</h4>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 subscribe-txtbox">
+                                	<input type="text" class="form-control" />
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 footer-btn">
+                                	<div class="btn-group">
+                                		<button type="button" class="btn btn-success dropdown-toggle btn-sm" data-toggle="dropdown" name="subscribedropdown">
+    subscribe 							<span class="caret"></span>
+  										</button>
+                                      <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Every day</a></li>
+                                        <li><a href="#">Twice a week</a></li>
+                                        <li><a href="#">Once a week</a></li>
+                                      </ul>
+                                	</div>
+                                 	<button class="btn btn-primary btn-sm btn-sub" name="subscribebtn">subscribe</button>
+                                 </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 col-xxs-12 col-msm-12">
+                            	<img src="images/antivirus.png" class="img-responsive footer-img" name="paymentsecure" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row copyright">
+                	<div class="col-lg-10 col-md-10 col-lg-offset-1 col-md-offset-1">
+                    	<div class="row">
+                        	<div class="col-lg-9 col-md-9 col-sm-9">
+                            	<p><a href="#">Tweet</a> | <a href="#">Follow on Twitter</a> | <a href="#">Like on Facebook</a> | <a href="#">RSS</a> | <a href="#">About</a> | <a href="#">Sponsor</a> | <a href="#"> Suggest a link</a> | <a href="#">Sign in</a></p>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3">
+                            	<p>Copy right Resverd 2013@ssit</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!-- ====================================== Main Content ================================ -->
+            </div>
+        </div>
+    </div>
+<!--  Script Files ========================================== -->
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/affix.js"></script>
+<script type="text/javascript" src="js/alert.js"></script>
+<script type="text/javascript" src="js/button.js"></script>
+<script type="text/javascript" src="js/carousel.js"></script>
+<script type="text/javascript" src="js/collapse.js"></script>
+<script type="text/javascript" src="js/dropdown.js"></script>
+<script type="text/javascript" src="js/modal.js"></script>
+<script type="text/javascript" src="js/popover.js"></script>
+<script type="text/javascript" src="js/scrollspy.js"></script>
+<script type="text/javascript" src="js/tab.js"></script>
+<script type="text/javascript" src="js/tooltip.js"></script>
+<script type="text/javascript" src="js/transition.js"></script>
+<script type="text/javascript" src="js/bootstrap-formhelpers.js"></script>
+<script type="text/javascript" src="js/bootstrap-formhelpers.min.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/qunit.js"></script>
+</body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>getsetgo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/mystyle.css" type="text/css" />
+<link rel="stylesheet" href="css/bootstrap-formhelpers.css" type="text/css" />
+<link rel="stylesheet" href="css/bootstrap-formhelpers.min.css" type="text/css" />
+<link rel="stylesheet" href="css/bootstrap-select.css" type="text/css" />
+<link rel="stylesheet" href="css/bootstrap-select.min.css" type="text/css" />
+<link rel="stylesheet" href="css/social-buttons.css" type="text/css" />
+<link rel="stylesheet" href="css/font-awesome.css" type="text/css" />
+</head>
+<body>
+	<div class="container coupon-page">
+    	<div class="row">
+        	<div class="col-lg-10 col-md-10 col-lg-offset-1 col-md-offset-1">
+<!-- ==================================== Main Content ================================ -->
+				<div class="row">
+                	<div class="navbar navbar-default">
+                        <div class="col-lg-10 col-md-10 col-lg-offset-1 col-md-offset-1">
+                        	<div class="navbar-header">
+                  				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    				<span class="icon-bar"></span>
+                    				<span class="icon-bar"></span>
+                    				<span class="icon-bar"></span>
+                  				</button>
+                  				<a class="" href="#"><img src="images/logo.png" class="logo img-responsive"></a>
+                </div>
+                        	<div class="navbar-collapse collapse navbar-responsive-collapse">
+                            	<ul class="nav navbar-nav navbar-right">
+                                    <li class="active"><a href="bustickets.html">BusTickets</a></li>
+                                    <li><a href="#">FlightTickets</a></li>
+                                    <li><a href="#">Billpayments</a></li>
+                                    <li><a href="recharges.html">Recharges</a></li>
+                                </ul>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+<!-- ====================================== End Header ==================================== -->
+				<div class="row header">
+                	<div class="col-lg-10 col-md-10 col-lg-offset-1 col-md-offset-1">
+                    	<div class="row">
+                        	<div class="col-lg-6 col-md-6 col-sm-6">
+                            	<h4 class="search-head"><span>Vijayawada</span><span class="glyphicon glyphicon-arrow-right"></span><span>Hyderabad</span></h4>
+                            </div>
+<!-- ============================ Filter Options Section Starts here ==================================== -->
+                            <div class="col-lg-6 col-md-6 col-sm-6 filter-bar">
+                            	<div class="hidden-xs">
+                            	<span>Edit Options: </span>
+                                 <div class="btn-group fiter-modifysearch">
+                                 	<a href="#" data-toggle="popover" data-placement="bottom" data-content="this is my popover demo" data-original-title="" title="">
+                                    	<span class="glyphicon glyphicon-edit"></span>
+                                    </a>
+                                 </div>
+                                 </div> <!-- End desktop-->     
+                                 <div class="visible-xs">
+                            	<span>Edit Options: </span>
+                                 <div class="btn-group fiter-modifysearch">
+                                 	<a href="#" data-toggle="popover" data-placement="bottom" data-content="this is my popover demo" data-original-title="Modify Search" title="">
+                                    	<span class="glyphicon glyphicon-chevron-down"></span>
+                                    </a>
+                                 </div>
+                                 </div> <!-- End Mobile-->      
+                            </div>
+<!-- ======================= Filter Options Section Ends here ======================================== -->
+                        </div>
+<!-- ============================ Brea Navigation Starts =========================================== -->
+						<div class="row hidden-xxs">
+                            <ol class="breadcrumb">
+                               	<li class="active"><a href="home.html">BusTickets</a></li>
+                                <li class="active"><a href="buses_list.html">Select Bus</a></li>
+                                <li class="active"><a href="seatlayout.html">Seat latout</a></li>
+                                <li>Passenger Details</li>
+                        	</ol>    
+                        </div>
+<!-- ============================ Brea Navigation Ends ========================================= -->
+                    </div>
+                </div>
+<!-- ===================================== End subHeader ===================================== -->
+				<div class="row content">
+                	<div class="col-lg-10 col-md-10 col-lg-offset-1 col-md-offset-1">
+                    	<div class="row">
+                        	<div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 col-msm-12">
+                            <!-- Login form Design -->
+                                <div id="loginform">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="username">Username</label>
+                                            <input type="text" class="form-control" placeholder="Username or Mobile No" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="password">Password</label>
+                                            <input type="password" class="form-control" placeholder="password" />
+                                        </div>
+                                        <div class="form-group">
+                                            <button type="button" class="btn btn-primary">Sign In</button>
+                                            <a href="#" onclick="viewRegForm()">Sign Up for new User ?</a>
+                                        </div>
+                                        <div class="form-group">
+                                            <a href="#">Forgot Password ?</a>
+                                        </div>
+                                        <div class="form-group">
+                                            <span><i class="glyphicon glyphicon-check"></i></span>
+                                            <span>Keep me logged in</span>
+                                        </div>
+                                     </form>
+                                </div>
+             <!-- Login form Design -->
+             <!-- Registration  form Design -->
+             <script type="text/javascript">
+			 	function viewRegForm(){
+					var a = document.getElementById("loginform");
+					var b = document.getElementById("registration-form");
+					a.style.display="none";
+					b.style.display="block";
+				}
+			 </script>
+             					<div id="registration-form">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="mobileno">Enter mobile no</label>
+                                            <input type="text" class="form-control" placeholder="Enter Mobile No" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="emailid">Enter Email ID</label>
+                                            <input type="text" class="form-control" placeholder="Enter Email ID" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="password">Password</label>
+                                            <input type="password" class="form-control" placeholder="Password" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="Confirmpassword">Confirm Password</label>
+                                            <input type="password" class="form-control" placeholder="Password" />
+                                        </div>
+                                        <div class="form-group">
+                                            <button type="button" class="btn btn-primary">Sign Up</button>
+                                            <a href="#">Back to SignIn</a>
+                                        </div>
+                                    </form>
+                                </div>
+             <!-- Registration  form Design -->
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-7 col-msm-12 col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
+                            	<div class="row social-login">
+                                	<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
+                                    	<div class="form-group">
+  												<a href="#" class="btn btn-facebook col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                	<i class="icon-facebook"></i> | Connect with Facebook
+                                                </a>
+                                        </div>
+                                        <div class="form-group">
+  												<a href="#" class="btn btn-twitter col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                	<i class="icon-twitter"></i> | Connect with Twitter
+                                                </a>
+                                        </div>
+                                        <div class="form-group">
+  												<a href="#" class="btn btn-google-plus col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                	<i class="icon-google-plus"></i> | Connect with Gmail
+                                                </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                </div>
+<!-- ================================ content sec End ======================================= -->
+				<div class="row footer">
+                	<div class="col-lg-10 col-md-10 col-lg-offset-1 col-md-offset-1">
+                    	<div class="row">
+                        	<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 col-msm-12">
+                            	<h4>Get Offer By Email</h4>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 subscribe-txtbox">
+                                	<input type="text" class="form-control" />
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 footer-btn">
+                                	<div class="btn-group">
+                                		<button type="button" class="btn btn-success dropdown-toggle btn-sm" data-toggle="dropdown" name="subscribedropdown">
+    subscribe 							<span class="caret"></span>
+  										</button>
+                                      <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Every day</a></li>
+                                        <li><a href="#">Twice a week</a></li>
+                                        <li><a href="#">Once a week</a></li>
+                                      </ul>
+                                	</div>
+                                 	<button class="btn btn-primary btn-sm btn-sub" name="subscribebtn">subscribe</button>
+                                 </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 col-xxs-12 col-msm-12">
+                            	<img src="images/antivirus.png" class="img-responsive footer-img" name="paymentsecure" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row copyright">
+                	<div class="col-lg-10 col-md-10 col-lg-offset-1 col-md-offset-1">
+                    	<div class="row">
+                        	<div class="col-lg-9 col-md-9 col-sm-9">
+                            	<p><a href="#">Tweet</a> | <a href="#">Follow on Twitter</a> | <a href="#">Like on Facebook</a> | <a href="#">RSS</a> | <a href="#">About</a> | <a href="#">Sponsor</a> | <a href="#"> Suggest a link</a> | <a href="#">Sign in</a></p>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3">
+                            	<p>Copy right Resverd 2013@ssit</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!-- ====================================== Main Content ================================ -->
+            </div>
+        </div>
+    </div>
+<!--  Script Files ========================================== -->
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/affix.js"></script>
+<script type="text/javascript" src="js/alert.js"></script>
+<script type="text/javascript" src="js/button.js"></script>
+<script type="text/javascript" src="js/carousel.js"></script>
+<script type="text/javascript" src="js/collapse.js"></script>
+<script type="text/javascript" src="js/dropdown.js"></script>
+<script type="text/javascript" src="js/modal.js"></script>
+<script type="text/javascript" src="js/popover.js"></script>
+<script type="text/javascript" src="js/scrollspy.js"></script>
+<script type="text/javascript" src="js/tab.js"></script>
+<script type="text/javascript" src="js/tooltip.js"></script>
+<script type="text/javascript" src="js/transition.js"></script>
+<script type="text/javascript" src="js/bootstrap-formhelpers.js"></script>
+<script type="text/javascript" src="js/bootstrap-formhelpers.min.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/qunit.js"></script>
+</body>
+</html>

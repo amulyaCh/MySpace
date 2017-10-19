@@ -1,0 +1,490 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>getsetgo</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+
+<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+<link rel="stylesheet" href="css/mystyle.css" type="text/css" />
+<link rel="stylesheet" href="css/bootstrap-formhelpers.css" type="text/css" />
+<link rel="stylesheet" href="css/bootstrap-formhelpers.min.css" type="text/css" />
+<link rel="stylesheet" href="css/slider.css" type="text/css" />
+<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" type="text/css" />
+</head>
+<body>
+	<div class="container">
+    	<div class="row">
+        	<div class="col-lg-10 col-md-10 col-lg-offset-1 col-md-offset-1">
+<!-- ==================================== Main Content ================================ -->
+				<div class="row">
+                	<div class="navbar navbar-default">
+                        <div class="col-lg-10 col-md-10 col-lg-offset-1 col-md-offset-1">
+                        	<div class="navbar-header">
+                  				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    				<span class="icon-bar"></span>
+                    				<span class="icon-bar"></span>
+                    				<span class="icon-bar"></span>
+                  				</button>
+                  				<a class="" href="#"><img src="images/logo.png" class="logo img-responsive" /></a>
+                </div>
+                        	<div class="navbar-collapse collapse navbar-responsive-collapse">
+                            	<ul class="nav navbar-nav navbar-right">
+                                    <li class="active"><a href="bustickets.html">BusTickets</a></li>
+                                    <li><a href="#">FlightTickets</a></li>
+                                    <li><a href="#">Billpayments</a></li>
+                                    <li><a href="recharges.html">Recharges</a></li>
+                                </ul>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+<!-- ====================================== End Header ==================================== -->
+				<div class="row header">
+                	<div class="col-lg-10 col-md-10 col-lg-offset-1 col-md-offset-1">
+                    	<div class="row">
+                        	<div class="col-lg-6 col-md-6 col-sm-6">
+                            	<h4 class="search-head"><span>Vijayawada</span><span class="glyphicon glyphicon-arrow-right"></span><span>Hyderabad</span></h4>
+                            </div>
+<!-- ============================ Filter Options Section Starts here ==================================== -->
+                            <div class="col-lg-6 col-md-6 col-sm-6 filter-bar">
+                            	<span>Filter Options: </span>
+                                <div class="btn-group">
+                                	<a href="#" data-toggle="popover" data-placement="bottom" data-content="this is my popover demo">
+                                    	<span class="glyphicon glyphicon-filter"></span>
+                                    </a>
+                                 </div>	
+                                 <div class="btn-group">
+                                 	<a href="#" data-toggle="popover" data-placement="bottom" data-content="this is my popover demo">
+                                    	<span class="glyphicon glyphicon-time"></span>
+                                    </a>
+                                 </div>
+                                 <div class="btn-group fiter-modifysearch">
+                                 <!-- Popup Form-->
+                                    <div class="dropdown" id="menuLogin">
+            						<a class="dropdown-toggle" href="#" data-toggle="dropdown" id="navLogin">
+            							<span class="glyphicon glyphicon-edit"></span></a>
+                                            <div class="dropdown-menu">
+                                                 <form class="form" id="formLogin"> 
+                                                        <div class="form-group">
+                                                            <label for="Enter Source City">From</label>
+                                                            <input type="text" class="form-control" placeholder="Enter Source City" />
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="Enter Destation City">To</label>
+                                                            <input type="text" class="form-control" placeholder="Enter Destation City" />
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="Departingdate">Date of journey</label>
+                                                            <div class="bfh-datepicker" data-format="d-m-y" data-date="today">
+                                                            </div>
+                                                         </div>
+                                                        <div class="form-group">
+                                                            <button type="text" class="btn btn-success btn-sm">
+                                                                Search For bues
+                                                            </button>
+                                                        </div>
+                                                </form>
+                                         </div>
+                                 </div>
+                                 <!--Popup Form close -->
+                                 </div>         
+                            </div>
+<!-- ======================= Filter Options Section Ends here ======================================== -->
+                        </div>
+<!-- ============================ Brea Navigation Starts =========================================== -->
+						<div class="row">
+                            <ol class="breadcrumb">
+                               	<li class="active"><a href="home.html">BusTickets</a></li>
+                                <li>Select Bus</li>
+                        	</ol>    
+                        </div>
+<!-- ============================ Brea Navigation Ends ========================================= -->
+                    </div>
+                </div>
+<!-- ===================================== End subHeader ===================================== -->
+				<div class="row content">
+                	<div class="col-lg-10 col-md-10 col-lg-offset-1 col-md-offset-1">
+<!-- ================================== Date Navgigation Srats Here ===================================  -->
+						<div class="row date-tab">
+                        	<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                            	<div class="tooltip-demo">
+                            		<a href="#" data-toggle="tooltip" data-placement="top" data-original-title="Previous Day">
+                            			<i class="glyphicon glyphicon-chevron-left"></i>
+                                    	<span>Nov 26</span>
+                                	</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 visible-lg visible-md">
+                            	<h4>Saturday, November 20 th</h4>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                            	<div class="tooltip-demo pull-right">
+                            		<a href="#" data-toggle="tooltip" data-placement="top" data-original-title="Next Day">
+                                    	<span>Nov 26</span>
+										<i class="glyphicon glyphicon-chevron-right"></i>
+                                	</a>
+                                </div>
+                            </div>
+                        </div>
+<!-- ================================== Date Navgigation Ends Here ===================================  -->
+						
+<!-- ===================================== Buses List Display =================================== -->
+						<div class="row result">
+                        	<div class="col-lg-12">
+                            	<table class="table table-striped table-hover table-responsive">
+                                <thead class="hidden-mxs hidden-xxs">
+                                	<tr>
+                                    	<th>
+                                			<span>Bus Operator</span>
+                                            <span class="dropdown" id="menuLogin">
+            									<a class="dropdown-toggle" href="#" data-toggle="dropdown" id="navLogin">
+            									<span class="glyphicon glyphicon-filter"></span></a>
+            									<div class="dropdown-menu" style="padding:10px;">
+                                                     <form class="form" id="filterItems"> 
+                                                     			<p class="text-center">Filter Listed by</p>
+                                                                <hr />
+                                                           <ul class="operatorlist">
+                                                                <li class="text-center"><Span><strong><a href="#">Select all</a></strong></Span>|
+                                                                <span><strong><a href="#">Select none</a></strong></span></li>
+                                                    			<li><input type="checkbox" /> A/C</li>
+                                                        		<li><input type="checkbox" /> Non-A/C</li>
+                                                        		<li><input type="checkbox" /> Sleeper</li>
+                                                           </ul>
+                                                                <hr />
+                                                                <p class="text-center">Bus Operator</p>
+                                                             <div class="scrollbar" id="content_1">
+                                                            <ul class="operatorlist">
+                                                            	<li><input type="checkbox" /> Morning *******</li>
+                                                                <li><input type="checkbox" /> Morning Star Travels</li>
+                                                                <li><input type="checkbox" /> Morning Star Travels</li>
+                                                                <li><input type="checkbox" /> Morning Star Travels</li>
+                                                                <li><input type="checkbox" /> Morning Star Travels</li>
+                                                                <li><input type="checkbox" /> Morning Star Travels</li>
+                                                                <li><input type="checkbox" /> Morning Star Travels</li>
+                                                                <li><input type="checkbox" /> Morning Star Travels</li>
+                                                                <li><input type="checkbox" /> Morning Star Travels</li>
+                                                                <li><input type="checkbox" /> Morning Star Travels</li>
+                                                                <li><input type="checkbox" /> Morning Star Travels</li>
+                                                                <li><input type="checkbox" /> Morning Star Travels</li>
+                                                                <li><input type="checkbox" /> Morning Star Travels</li>
+                                                                <li><input type="checkbox" /> Morning Star Travels</li>
+                                                                <li><input type="checkbox" /> Morning Star Travels</li>
+                                                            </ul>
+                                                            </div>
+                                                            <h3>
+                                                            	<button class="btn btn-xs btn-success">Apply Filter</button>
+                                                                <button class="btn btn-xs btn-success pull-right">Cancle</button>
+                                                            </h3>
+                                                    </form>
+                                             </div>
+                                             </span>
+                                        </th>
+                                        <th>
+                                			<span>Departure</span> 													                                            <span class="dropdown" id="menuLogin">
+            									<a class="dropdown-toggle" href="#" data-toggle="dropdown" id="navLogin">
+            									<span class="glyphicon glyphicon-time"></span></a>
+            										<div class="dropdown-menu timeslider" style="padding:10px 15px;">
+                                                		<p class="text-center">Time Slider</p>
+                                                        <hr />
+                                                        	<input id="deptime" type="text" data-slider-min="1" data-slider-max="20" data-slider-step="1" data-slider-value="3"/>
+                                                            <div>
+                                                            	<span id="deptimeCurrentSliderValLabel">Time  
+                                                                <span id="deptimeSliderVal">3:00 </span></span>
+                                                            </div>
+                                                            <h3>
+                                                                <button class="btn btn-xs btn-success">Apply Filter</button>
+                                                                <button class="btn btn-xs btn-success">Cancle</button>
+                                                            </h3>
+													</div>
+                                             </span>
+                                        </th>
+                                        <th class="hidden-sm hidden-xs">
+                                			<span>Arrival</span>
+                                            <span class="dropdown" id="menuLogin">
+            									<a class="dropdown-toggle" href="#" data-toggle="dropdown" id="navLogin">
+            									<span class="glyphicon glyphicon-time"></span></a>
+            										<div class="dropdown-menu timeslider" style="padding:10px 15px;">
+                                                		<p class="text-center">Time Slider</p>
+                                                        <hr />
+                                                        	<input id="arrtime" type="text" data-slider-min="1" data-slider-max="20" data-slider-step="1" data-slider-value="3"/>
+                                                            <div>
+                                                            	<span id="arrtimeCurrentSliderValLabel">Time  
+                                                                <span id="arrtimeSliderVal">3:00 </span></span>
+                                                            </div>
+                                                            <h3>
+                                                                <button class="btn btn-xs btn-success">Apply Filter</button>
+                                                                <button class="btn btn-xs btn-success">Cancle</button>
+                                                            </h3>
+													</div>
+                                             </span>
+                                        </th>
+                                        <th class="hidden-sm hidden-xs">
+                                        	<span>Duration</span>
+                                            <span class="dropdown" id="menuLogin">
+            									<a class="dropdown-toggle" href="#" data-toggle="dropdown" id="navLogin">
+            									<span class="glyphicon glyphicon-time"></span></a>
+            										<div class="dropdown-menu timeslider" style="padding:10px 15px;">
+                                                		<p class="text-center">Duration</p>
+                                                        <hr />
+                                                        	<input id="duration" type="text" data-slider-min="1" data-slider-max="12" data-slider-step="1" data-slider-value="3"/>
+                                                            <div>
+                                                            	<span id="durationCurrentSliderValLabel">Time  
+                                                                <span id="durationSliderVal">3 hr </span></span>
+                                                            </div>
+                                                            <h3>
+                                                                <button class="btn btn-xs btn-success">Apply Filter</button>
+                                                                <button class="btn btn-xs btn-success">Cancle</button>
+                                                            </h3>
+													</div>
+                                             </span>
+                                        </th>
+                                        <th>
+                                			<span>Price</span>
+                                            <span class="dropdown" id="menuLogin">
+            									<a class="dropdown-toggle" href="#" data-toggle="dropdown" id="navLogin">
+            									<span class="glyphicon glyphicon-time"></span></a>
+            										<div class="dropdown-menu" style="padding:10px 15px;">
+                                                		<p class="text-center">Price</p>
+                                                        <hr />
+                                                        	<input id="price" type="text" data-slider-min="300" data-slider-max="700" data-slider-step="50" data-slider-value="300"/>
+                                                            <div>
+                                                            	<span id="priceCurrentSliderValLabel">Time  
+                                                                <span id="priceSliderVal">Rs. 300 </span></span>
+                                                            </div>
+                                                             <h3>
+                                                                <button class="btn btn-xs btn-success">Apply Filter</button>
+                                                                <button class="btn btn-xs btn-success">Cancle</button>
+                                                            </h3>
+													</div>
+                                             </span>
+                                        </th>
+                                    </tr>
+                                    </thead>
+<!-- ================================= Table Head End Here =============================== -->
+<!-- ============================= Buses List Start Here =================================== -->
+                                    <tr>
+                                    	<td class="hidden-xxs hidden-mxs">
+                                        	<p class="lead">Morning Star Travels</p>
+                                            <small>A/C Seater Classy (2+2)</small>
+                                        </td>
+                                        <td>
+                                        	<p class="lead visible-lg visible-md">11:20 PM</p>
+                                            <p class="lead visible-lg visible-md"><small><a href="#">Boarding Point</a></small></p>
+                                            <p class="lead visible-sm visible-xs"><span>11:20 PM</span> - <span>05:00 AM</span></p>
+                                            <p class="lead hidden-xxs hidden-mxs hidden-md hidden-lg"><span><a href="#">Boarding Point</a></span></p>
+                                            <p class="visible-xxs visible-mxs"><small>Morning Star Travels</small></p>
+                                            <p  class="visible-xxs visible-mxs"><small>Non A/C Hi-Tech (2+2)</small></p>
+                                        </td>
+                                        <td class="hidden-sm hidden-xs">
+                                        	<p class="lead">05:00 AM</p>
+                                            <small><a href="#">Dropping points</a></small>
+                                        </td>
+                                        <td class="hidden-sm hidden-xs">
+                                        	<p class="lead">5 h 40 m</p>
+                                            <small><a href="#">Cancellation Policy</a></small>
+                                        </td>
+                                        <td>
+                                            <a class="btn btn-sm btn-primary price-btn" href="seatlayout.html"><span class="rupee-font">RS</span>500</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                    	<td class="hidden-xxs hidden-mxs">
+                                        	<p class="lead">Reddy Express Tours & Travels</p>
+                                            <small>A/C Seater Classy (2+2)</small>
+                                        </td>
+                                        <td>
+                                        	<p class="lead visible-lg visible-md">11:20 PM</p>
+                                            <p class="lead visible-lg visible-md"><small><a href="#">Boarding Point</a></small></p>
+                                            <p class="lead visible-sm visible-xs"><span>11:20 PM</span> - <span>05:00 AM</span></p>
+                                            <p class="lead hidden-xxs hidden-mxs hidden-md hidden-lg"><span><a href="#">Boarding Point</a></span></p>
+                                            <p class="visible-xxs visible-mxs"><small>Reddy Express Tours & Travels</small></p>
+                                            <p  class="visible-xxs visible-mxs"><small>Non A/C Hi-Tech (2+2)</small></p>
+                                        </td>
+                                        <td class="hidden-sm hidden-xs">
+                                        	<p class="lead">05:00 AM</p>
+                                            <small><a href="#">Dropping points</a></small>
+                                        </td>
+                                        <td class="hidden-sm hidden-xs">
+                                        	<p class="lead">5 h 40 m</p>
+                                            <small><a href="#">Cancellation Policy</a></small>
+                                        </td>
+                                        <td>
+                                            <a class="btn btn-sm btn-primary price-btn" href="seatlayout.html"><span class="rupee-font">RS</span>500</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                    	<td class="hidden-xxs hidden-mxs">
+                                        	<p class="lead">Rajesh Travels</p>
+                                            <small>A/C Seater Classy (2+2)</small>
+                                        </td>
+                                        <td>
+                                        	<p class="lead visible-lg visible-md">11:20 PM</p>
+                                            <p class="lead visible-lg visible-md"><small><a href="#">Boarding Point</a></small></p>
+                                            <p class="lead visible-sm visible-xs"><span>11:20 PM</span> - <span>05:00 AM</span></p>
+                                            <p class="lead hidden-xxs hidden-mxs hidden-md hidden-lg"><span><a href="#">Boarding Point</a></span></p>
+                                            <p class="visible-xxs visible-mxs"><small>Rajesh Travels</small></p>
+                                            <p  class="visible-xxs visible-mxs"><small>Non A/C Hi-Tech (2+2)</small></p>
+                                        </td>
+                                        <td class="hidden-sm hidden-xs">
+                                        	<p class="lead">05:00 AM</p>
+                                            <small><a href="#">Dropping points</a></small>
+                                        </td>
+                                        <td class="hidden-sm hidden-xs">
+                                        	<p class="lead">5 h 40 m</p>
+                                            <small><a href="#">Cancellation Policy</a></small>
+                                        </td>
+                                        <td>
+                                            <a class="btn btn-sm btn-primary price-btn" href="seatlayout.html"><span class="rupee-font">RS</span>500</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                    	<td class="hidden-xxs hidden-mxs">
+                                        	<p class="lead">SVR Tours & Travels</p>
+                                            <small>A/C Seater Classy (2+2)</small>
+                                        </td>
+                                        <td>
+                                        	<p class="lead visible-lg visible-md">11:20 PM</p>
+                                            <p class="lead visible-lg visible-md"><small><a href="#">Boarding Point</a></small></p>
+                                            <p class="lead visible-sm visible-xs"><span>11:20 PM</span> - <span>05:00 AM</span></p>
+                                            <p class="lead hidden-xxs hidden-mxs hidden-md hidden-lg"><span><a href="#">Boarding Point</a></span></p>
+                                            <p class="visible-xxs visible-mxs"><small>SVR Tours & Travels</small></p>
+                                            <p  class="visible-xxs visible-mxs"><small>Non A/C Hi-Tech (2+2)</small></p>
+                                        </td>
+                                        <td class="hidden-sm hidden-xs">
+                                        	<p class="lead">05:00 AM</p>
+                                            <small><a href="#">Dropping points</a></small>
+                                        </td>
+                                        <td class="hidden-sm hidden-xs">
+                                        	<p class="lead">5 h 40 m</p>
+                                            <small><a href="#">Cancellation Policy</a></small>
+                                        </td>
+                                        <td>
+                                            <a class="btn btn-sm btn-primary price-btn" href="seatlayout.html"><span class="rupee-font">RS</span>500</a>
+                                        </td>
+                                    </tr>
+<!-- ===================================== Buses List Ends Here ======================================= -->
+                                </table>
+                            </div>
+                        </div>
+<!-- ====================================== Buses List Display end ==================================== -->
+						<div class="pagination-panel">
+                        	<ul class="pagination pagination-sm">
+                               <li><a href="#">«</a></li>
+                               <li class="active"><a href="#">1</a></li>
+                               <li><a href="#">2</a></li>
+                               <li><a href="#">3</a></li>
+                               <li><a href="#">4</a></li>
+                               <li><a href="#">5</a></li>
+                               <li><a href="#">»</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+<!-- ================================ content sec End ======================================= -->
+				<div class="row footer">
+                	<div class="col-lg-10 col-md-10 col-lg-offset-1 col-md-offset-1">
+                    	<div class="row">
+                        	<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 col-msm-12">
+                            	<h4>Get Offer By Email</h4>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 subscribe-txtbox">
+                                	<input type="text" class="form-control" />
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 footer-btn">
+                                	<div class="btn-group">
+                                		<button type="button" class="btn btn-success dropdown-toggle btn-sm" data-toggle="dropdown" name="subscribedropdown">
+    subscribe 							<span class="caret"></span>
+  										</button>
+                                      <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Every day</a></li>
+                                        <li><a href="#">Twice a week</a></li>
+                                        <li><a href="#">Once a week</a></li>
+                                      </ul>
+                                	</div>
+                                 	<button class="btn btn-primary btn-sm btn-sub" name="subscribebtn">subscribe</button>
+                                 </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 col-xxs-12 col-msm-12">
+                            	<img src="images/antivirus.png" class="img-responsive footer-img" name="paymentsecure" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row copyright">
+                	<div class="col-lg-10 col-md-10 col-lg-offset-1 col-md-offset-1">
+                    	<div class="row">
+                        	<div class="col-lg-9 col-md-9 col-sm-9">
+                            	<p><a href="#">Tweet</a> | <a href="#">Follow on Twitter</a> | <a href="#">Like on Facebook</a> | <a href="#">RSS</a> | <a href="#">About</a> | <a href="#">Sponsor</a> | <a href="#"> Suggest a link</a> | <a href="#">Sign in</a></p>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3">
+                            	<p>Copy right Resverd 2013@ssit</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!-- ====================================== Main Content ================================ -->
+            </div>
+        </div>
+    </div>
+<!--  Script Files ========================================== -->
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/widgets.js"></script>
+    <script type="text/javascript" src="js/bootstrap-slider.js"></script>
+    <script type="text/javascript" src="js/bootstrap-transition.js"></script>
+    <script type="text/javascript" src="js/bootstrap-alert.js"></script>
+    <script type="text/javascript" src="js/bootstrap-modal.js"></script>
+    <script type="text/javascript" src="js/bootstrap-dropdown.js"></script>
+    <script type="text/javascript" src="js/bootstrap-scrollspy.js"></script>
+    <script type="text/javascript" src="js/bootstrap-tab.js"></script>
+    <script type="text/javascript" src="js/bootstrap-tooltip.js"></script>
+    <script type="text/javascript" src="js/bootstrap-popover.js"></script>
+    <script type="text/javascript" src="js/bootstrap-button.js"></script>
+    <script type="text/javascript" src="js/bootstrap-carousel.js"></script>
+    <script type="text/javascript" src="js/bootstrap-typeahead.js"></script>
+    <script type="text/javascript" src="js/bootstrap-affix.js"></script>
+    <script type="text/javascript" src="js/holder.js"></script>
+    <script type="text/javascript" src="js/prettify.js"></script>
+    <script type="text/javascript" src="js/application.js"></script>
+    <script type="text/javascript" src="js/bootstrap-formhelpers.js"></script>
+	<script type="text/javascript" src="js/bootstrap-formhelpers.min.js"></script>
+
+    <!-- Common files -->
+	<script type='text/javascript'>
+    	$(document).ready(function() {
+	    	$("#deptime").slider();
+			$("#deptime").on('slide', function(slideEvt) {
+				$("#deptimeSliderVal").text(slideEvt.value+":00 ");
+			});
+			
+			$("#arrtime").slider();
+			$("#arrtime").on('slide', function(slideEvt) {
+				$("#arrtimeSliderVal").text(slideEvt.value+":00 ");
+			});
+			
+			$("#duration").slider();
+			$("#duration").on('slide', function(slideEvt) {
+				$("#durationSliderVal").text(slideEvt.value+" hr ");
+			});
+			
+			$("#price").slider();
+			$("#price").on('slide', function(slideEvt) {
+				$("#priceSliderVal").text(" Rs. "+slideEvt.value);
+			});
+    	});
+    </script>
+	<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script>
+		(function($){
+			$(window).load(function(){
+				$("#content_1").mCustomScrollbar({
+					scrollButtons:{
+						enable:true
+					}
+				});
+			});
+		})(jQuery);
+	</script>
+</body>
+</html>

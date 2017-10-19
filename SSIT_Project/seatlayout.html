@@ -1,0 +1,489 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>getsetgo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/mystyle.css" type="text/css" />
+<link rel="stylesheet" href="css/bootstrap-formhelpers.css" type="text/css" />
+<link rel="stylesheet" href="css/bootstrap-formhelpers.min.css" type="text/css" />
+</head>
+<body data-twttr-rendered="true">
+	<div class="container">
+    	<div class="row">
+        	<div class="col-lg-10 col-md-10 col-lg-offset-1 col-md-offset-1">
+<!-- ==================================== Main Content ================================ -->
+				<div class="row">
+                	<div class="navbar navbar-default">
+                        <div class="col-lg-10 col-md-10 col-lg-offset-1 col-md-offset-1">
+                        	<div class="navbar-header">
+                  				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    				<span class="icon-bar"></span>
+                    				<span class="icon-bar"></span>
+                    				<span class="icon-bar"></span>
+                  				</button>
+                  				<a class="" href="#"><img src="images/logo.png" class="logo img-responsive"></a>
+                </div>
+                        	<div class="navbar-collapse collapse navbar-responsive-collapse">
+                            	<ul class="nav navbar-nav navbar-right">
+                                    <li class="active"><a href="bustickets.html">BusTickets</a></li>
+                                    <li><a href="#">FlightTickets</a></li>
+                                    <li><a href="#">Billpayments</a></li>
+                                    <li><a href="recharges.html">Recharges</a></li>
+                                </ul>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+<!-- ====================================== End Header ==================================== -->
+				<div class="row header">
+                	<div class="col-lg-10 col-md-10 col-lg-offset-1 col-md-offset-1">
+                    	<div class="row">
+                        	<div class="col-lg-6 col-md-6 col-sm-6">
+                            	<h4 class="search-head"><span>Vijayawada</span><span class="glyphicon glyphicon-arrow-right"></span><span>Hyderabad</span></h4>
+                            </div>
+<!-- ============================ Filter Options Section Starts here ==================================== -->
+                            <div class="col-lg-6 col-md-6 col-sm-6 filter-bar">
+                            	<span>Edit Options: </span>
+                                 <div class="btn-group fiter-modifysearch">
+                                 	<a href="#" data-toggle="popover" data-placement="bottom" data-content="this is my popover demo" data-original-title="" title="">
+                                    	<span class="glyphicon glyphicon-edit"></span>
+                                    </a>
+                                 </div>         
+                            </div>
+<!-- ======================= Filter Options Section Ends here ======================================== -->
+                        </div>
+<!-- ============================ Brea Navigation Starts =========================================== -->
+						<div class="row">
+                            <ol class="breadcrumb">
+                               	<li class="active"><a href="home.html">BusTickets</a></li>
+                                <li class="active"><a href="buses_list.html">Select Bus</a></li>
+                                <li>Seat latout</li>
+                        	</ol>    
+                        </div>
+<!-- ============================ Brea Navigation Ends ========================================= -->
+                    </div>
+                </div>
+<!-- ===================================== End subHeader ===================================== -->
+				<div class="row content">
+                	<div class="col-lg-10 col-md-10 col-lg-offset-1 col-md-offset-1">
+<!-- ============== Desktop View =============-->
+                    	<div class="row hidden-xs">
+                        	<div class="col-lg-8 col-md-8 col-sm-8">
+                            	<div class="row">
+                                	<div class="col-lg-4 col-md-4 col-sm-4">
+                                    	<p>Bus Operator:</p>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-8">
+                                    	<p><strong>Morning Star Travels </strong></p>
+                                        <p>Non A/c</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                            	<span>Time: </span>
+                                <span><strong>10:30 Pm</strong></span>
+                            </div>
+                        </div>
+<!-- ===================Desktop View ================= -->
+<!-- ==================== Mobile View =========================-->
+						<div class="row visible-xs">
+                        	<div class="col-xs-12">
+                            	<div class="btn-group">
+                                		<button type="button" class="btn dropdown-toggle btn-sm btn-default" data-toggle="dropdown">
+   				 info 					<span class="caret"></span>
+  										</button>
+                                      <ul class="dropdown-menu info-menu" role="menu">
+                                        <li><span>From: </span><span><strong>Vijayawada</strong></span></li>
+                                        <li><span>To: </span><span><strong>Hyderabad</strong></span></li>
+                                        <li><span>Boarding: </span><span><strong>BenzCircle</strong></span></li>
+                                        <li><span>Time: </span><span><strong>10:00 PM</strong></span></li>
+                                      </ul>
+                                </div>
+                                <div class="btn-group pull-right">
+                                		<button type="button" class="btn dropdown-toggle btn-sm btn-default" data-toggle="dropdown">
+   				 Legend 					<span class="caret"></span>
+  										</button>
+                                      <ul class="dropdown-menu info-menu mobile-legend" role="menu">
+                                            <li>
+                                                <span><img src="images/seat_white.png" /></span>
+                                                <span>Available</span>
+                                            </li>
+                                            <li>
+                                                <span><img src="images/seat_green.png" /></span>
+                                                <span>Selected Seat</span>
+                                            </li>
+                                            <li>
+                                                <span><img src="images/seat_gray.png" /></span>
+                                                <span>Un Available</span>
+                                            </li>	
+                                            <li>
+                                                <span><img src="images/seat_red.png" /></span>
+                                                <span>Available for ladies</span>
+                                            </li>
+                                      </ul>
+                                </div>
+                            </div>
+                        </div>
+<!-- ==================== Mobile View =========================-->
+<!-- =================================== Bus seat Layout ==================================== -->
+                    <div class="row">
+                    	<div class="col-lg-8 col-md-8 col-sm-8">
+                        	<div class="bus-dashboard">
+                                <div class="inner-seatlayout">
+                                <!-- Seat icon -->
+                                    <div class="seat1 seat-icon">
+                                         <a href="#"></a>
+                                    </div>
+                                    <div class="seat2 seat-icon">
+                                         <a href="#"></a>
+                                    </div>
+                                    <div class="seat3 seat-icon">
+                                         <a href="#"></a>
+                                    </div>
+                                    <div class="seat4 seat-icon">
+                                         <a href="#"></a>
+                                    </div>
+                                    <div class="seat5 seat-icon">
+                                         <a href="#"></a>
+                                    </div>
+                                    <div class="seat6 seat-icon">
+                                         <a href="#"></a>
+                                    </div>
+                                    <div class="seat7 seat-icon">
+                                         <a href="#"></a>
+                                    </div>
+                                    <div class="seat8 seat-icon">
+                                         <a href="#" class="unavilable-seat"></a>
+                                    </div>
+                                    <div class="seat9 seat-icon">
+                                        <a href="#" class="unavilable-seat"></a>
+                                    </div><!-- First row end-->
+                                    
+                                   <div class="seat10 seat-icon">
+                                         <a href="#" class="unavilable-seat"></a>
+                                    </div>
+                                    <div class="seat11 seat-icon">
+                                         <a href="#"></a>
+                                    </div>
+                                    <div class="seat12 seat-icon">
+                                         <a href="#" class="unavilable-seat"></a>
+                                    </div>
+                                    <div class="seat13 seat-icon">
+                                         <a href="#" class="unavilable-seat"></a>
+                                    </div>
+                                    <div class="seat14 seat-icon">
+                                         <a href="#"></a>
+                                    </div>
+                                    <div class="seat15 seat-icon">
+                                         <a href="#"></a>
+                                    </div>
+                                    <div class="seat16 seat-icon">
+                                         <a href="#" class="unavilable-seat"></a>
+                                    </div>
+                                    <div class="seat17 seat-icon">
+                                         <a href="#"></a>
+                                    </div>
+                                    <div class="seat18 seat-icon">
+                                        <a href="#" class="unavilable-seat"></a>
+                                    </div><!-- second row end-->
+                                    <div class="seat19 seat-icon">
+                                        <a href="#"></a>
+                                    </div><!-- Single Seat-->
+                                    <div class="seat20 seat-icon">
+                                         <a href="#"></a>
+                                    </div>
+                                    <div class="seat21 seat-icon">
+                                         <a href="#"></a>
+                                    </div>
+                                    <div class="seat22 seat-icon">
+                                         <a href="#"></a>
+                                    </div>
+                                    <div class="seat23 seat-icon">
+                                         <a href="#"></a>
+                                    </div>
+                                    <div class="seat24 seat-icon">
+                                         <a href="#" class="unavilable-seat"></a>
+                                    </div>
+                                    <div class="seat25 seat-icon">
+                                         <a href="#" class="unavilable-seat"></a>
+                                    </div>
+                                    <div class="seat26 seat-icon">
+                                         <a href="#" class="unavilable-seat"></a>
+                                    </div>
+                                    <div class="seat27 seat-icon">
+                                         <a href="#"></a>
+                                    </div>
+                                    <div class="seat28 seat-icon">
+                                        <a href="#" class="unavilable-seat"></a>
+                                    </div><!-- Fourth row end-->
+                                    
+                                    <div class="seat29 seat-icon">
+                                         <a href="#"></a>
+                                    </div>
+                                    <div class="seat30 seat-icon">
+                                         <a href="#" class="avillable-ladies"></a>
+                                    </div>
+                                    <div class="seat31 seat-icon">
+                                         <a href="#"></a>
+                                    </div>
+                                    <div class="seat32 seat-icon">
+                                         <a href="#"></a>
+                                    </div>
+                                    <div class="seat33 seat-icon">
+                                         <a href="#"></a>
+                                    </div>
+                                    <div class="seat34 seat-icon">
+                                         <a href="#"></a>
+                                    </div>
+                                    <div class="seat35 seat-icon">
+                                         <a href="#"></a>
+                                    </div>
+                                    <div class="seat36 seat-icon">
+                                         <a href="#"></a>
+                                    </div>
+                                    <div class="seat37 seat-icon">
+                                        <a href="#" class="selected-seat"></a>
+                                    </div>
+                                <!-- Seat icon ends-->    
+                                </div>
+                            </div>
+<!-- ======================== Small Mobiles Bus dash Board design ===============================-->
+							<div class="mobile-bus-dashboard">
+                                <div class="mobile-seatinner-layout">
+                                	<div class="mobile-seat-icon mobile-seat1">
+                                         <a href="#"></a>
+                                    </div>
+                                    <div class="mobile-seat-icon mobile-seat2">
+                                         <a href="#"></a>
+                                    </div>
+                                    <div class="mobile-seat-icon mobile-seat3">
+                                         <a href="#"></a>
+                                    </div>
+                                    <div class="mobile-seat-icon mobile-seat4">
+                                         <a href="#"></a>
+                                    </div>
+                                    <div class="mobile-seat-icon mobile-seat5">
+                                         <a href="#"></a>
+                                    </div>
+                                    <div class="mobile-seat-icon mobile-seat6">
+                                         <a href="#"></a>
+                                    </div>
+                                    <div class="mobile-seat-icon mobile-seat7">
+                                         <a href="#"></a>
+                                    </div>
+                                    <div class="mobile-seat-icon mobile-seat8">
+                                         <a href="#"></a>
+                                    </div>
+                                    <div class="mobile-seat-icon mobile-seat9">
+                                         <a href="#"></a>
+                                    </div>
+                                    <div class="mobile-seat-icon mobile-seat10">
+                                         <a href="#"></a>
+                                    </div>
+                                    <div class="mobile-seat-icon mobile-seat11">
+                                         <a href="#"></a>
+                                    </div>
+                                    <div class="mobile-seat-icon mobile-seat12">
+                                         <a href="#"></a>
+                                    </div>
+                                    <div class="mobile-seat-icon mobile-seat13">
+                                         <a href="#"></a>
+                                    </div>
+                                    <div class="mobile-seat-icon mobile-seat14">
+                                         <a href="#"></a>
+                                    </div>
+                                    <div class="mobile-seat-icon mobile-seat15">
+                                         <a href="#"></a>
+                                    </div>
+                                    <div class="mobile-seat-icon mobile-seat16">
+                                         <a href="#"></a>
+                                    </div>
+                                    <div class="mobile-seat-icon mobile-seat17">
+                                         <a href="#"></a>
+                                    </div>
+                                    <div class="mobile-seat-icon mobile-seat18">
+                                         <a href="#"></a>
+                                    </div>
+                                    <div class="mobile-seat-icon mobile-seat19">
+                                         <a href="#"></a>
+                                    </div>
+                                    <div class="mobile-seat-icon mobile-seat20">
+                                         <a href="#"></a>
+                                    </div>
+                                    <div class="mobile-seat-icon mobile-seat21">
+                                         <a href="#"></a>
+                                    </div>
+                                    <div class="mobile-seat-icon mobile-seat22">
+                                         <a href="#"></a>
+                                    </div>
+                                    <div class="mobile-seat-icon mobile-seat23">
+                                         <a href="#"></a>
+                                    </div>
+                                    <div class="mobile-seat-icon mobile-seat24">
+                                         <a href="#"></a>
+                                    </div>
+                                    <div class="mobile-seat-icon mobile-seat25">
+                                         <a href="#"></a>
+                                    </div>
+                                    <div class="mobile-seat-icon mobile-seat26">
+                                         <a href="#"></a>
+                                    </div>
+                                    <div class="mobile-seat-icon mobile-seat27">
+                                         <a href="#"></a>
+                                    </div>
+                                    <div class="mobile-seat-icon mobile-seat28">
+                                         <a href="#"></a>
+                                    </div>
+                                    <div class="mobile-seat-icon mobile-seat29">
+                                         <a href="#"></a>
+                                    </div>
+                                    <div class="mobile-seat-icon mobile-seat30">
+                                         <a href="#"></a>
+                                    </div>
+                                    <div class="mobile-seat-icon mobile-seat31">
+                                         <a href="#"></a>
+                                    </div>
+                                    <div class="mobile-seat-icon mobile-seat32">
+                                         <a href="#"></a>
+                                    </div>
+                                    <div class="mobile-seat-icon mobile-seat33">
+                                         <a href="#"></a>
+                                    </div>
+                                    <div class="mobile-seat-icon mobile-seat34">
+                                         <a href="#"></a>
+                                    </div>
+                                    <div class="mobile-seat-icon mobile-seat35">
+                                         <a href="#"></a>
+                                    </div>
+                                    <div class="mobile-seat-icon mobile-seat36">
+                                         <a href="#"></a>
+                                    </div>
+                                    <div class="mobile-seat-icon mobile-seat37">
+                                         <a href="#"></a>
+                                    </div>
+                                </div>
+                            </div>
+<!--========================  Small Mobiles Bus dash Board design ========================  -->
+                            
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 hidden-xs">
+                        	<ul class="legend">
+                            	<li>
+                                	<span><img src="images/seat_white.png" /></span>
+                                    <span>Available</span>
+                                </li>
+                                <li>
+                                	<span><img src="images/seat_green.png" /></span>
+                                    <span>Selected Seat</span>
+                                </li>
+                                <li>
+                                	<span><img src="images/seat_gray.png" /></span>
+                                    <span>Un Available</span>
+                                </li>
+                                <li>
+                                	<span><img src="images/seat_red.png" /></span>
+                                    <span>Available for ladies</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+<!--============================= Boarding points section ==============================-->
+                    <div class="row">
+                    	<div class="col-lg-8 col-md-8 col-sm-7 col-xs-12 borading-btn">
+                        	<div class="btn-group">
+                                		<button type="button" class="btn btn-success dropdown-toggle btn-sm" data-toggle="dropdown">
+    Boarding Points 							<span class="caret"></span>
+  										</button>
+                                      <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Busstand</a></li>
+                                        <li><a href="#">Benzcircle</a></li>
+                                        <li><a href="#">Varadhi</a></li>
+                                      </ul>
+                                	</div>
+                                 	<a class="btn btn-primary btn-sm btn-sub" href="passenger_details.html">Procced To Pay</a>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-5 col-xs-12">
+                        	<p>
+                            	<span>Seats (S) :</span>
+                                <span><input type="text"  value="22, 23"  readonly="readonly"  class="textbox-readonly"/></span>
+                            </p>
+                            <p>
+                            	<span>Amount :</span>
+                                <span>Rs.  <input type="text"  value="350"  readonly="readonly"  class="textbox-readonly"/></span>
+                            </p>
+                        </div>
+                    </div>
+<!--============================= Boarding points section Ends =========================-->
+                    
+                    </div>
+                </div>
+<!-- ================================ content sec End ======================================= -->
+				<div class="row footer">
+                	<div class="col-lg-10 col-md-10 col-lg-offset-1 col-md-offset-1">
+                    	<div class="row">
+                        	<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 col-msm-12">
+                            	<h4>Get Offer By Email</h4>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 subscribe-txtbox">
+                                	<input type="text" class="form-control" />
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 footer-btn">
+                                	<div class="btn-group">
+                                		<button type="button" class="btn btn-success dropdown-toggle btn-sm" data-toggle="dropdown" name="subscribedropdown">
+    subscribe 							<span class="caret"></span>
+  										</button>
+                                      <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Every day</a></li>
+                                        <li><a href="#">Twice a week</a></li>
+                                        <li><a href="#">Once a week</a></li>
+                                      </ul>
+                                	</div>
+                                 	<button class="btn btn-primary btn-sm btn-sub" name="subscribebtn">subscribe</button>
+                                 </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 col-xxs-12 col-msm-12">
+                            	<img src="images/antivirus.png" class="img-responsive footer-img" name="paymentsecure" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row copyright">
+                	<div class="col-lg-10 col-md-10 col-lg-offset-1 col-md-offset-1">
+                    	<div class="row">
+                        	<div class="col-lg-9 col-md-9 col-sm-9">
+                            	<p><a href="#">Tweet</a> | <a href="#">Follow on Twitter</a> | <a href="#">Like on Facebook</a> | <a href="#">RSS</a> | <a href="#">About</a> | <a href="#">Sponsor</a> | <a href="#"> Suggest a link</a> | <a href="#">Sign in</a></p>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3">
+                            	<p>Copy right Resverd 2013@ssit</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!-- ====================================== Main Content ================================ -->
+            </div>
+        </div>
+    </div>
+<!--  Script Files ========================================== -->
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/affix.js"></script>
+<script type="text/javascript" src="js/alert.js"></script>
+<script type="text/javascript" src="js/button.js"></script>
+<script type="text/javascript" src="js/carousel.js"></script>
+<script type="text/javascript" src="js/collapse.js"></script>
+<script type="text/javascript" src="js/dropdown.js"></script>
+<script type="text/javascript" src="js/modal.js"></script>
+<script type="text/javascript" src="js/popover.js"></script>
+<script type="text/javascript" src="js/scrollspy.js"></script>
+<script type="text/javascript" src="js/tab.js"></script>
+<script type="text/javascript" src="js/tooltip.js"></script>
+<script type="text/javascript" src="js/transition.js"></script>
+<script type="text/javascript" src="js/bootstrap-formhelpers.js"></script>
+<script type="text/javascript" src="js/bootstrap-formhelpers.min.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/qunit.js"></script>
+</body>
+</html>
